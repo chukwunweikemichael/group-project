@@ -3,3 +3,423 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Utility for non-standard sizing if output.css doesn't include it. 
+         This is generally bad practice, but sometimes required for pixel-perfect match. 
+         Standard Tailwind classes are used in the HTML below. */
+      .custom-card-shadow {
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+          0 2px 4px -2px rgb(0 0 0 / 0.1);
+      }
+    </style>
+  </head>
+  <body class="w-full m-0 p-0 box-border font-montserrat">
+    <nav
+      class="flex justify-between items-center w-[90%] md:w-[85%] mx-auto py-6 md:py-10"
+    >
+      <img src="./images/A+Studio.png" alt="logo" class="h-4 md:h-5" />
+
+      <ul class="hidden gap-10 font-medium md:flex text-sm capitalize">
+        <li class="transition duration-300 hover:-translate-y-0.5">
+          <a
+            class="hover:text-blue-600 transition-colors duration-300"
+            href="#"
+            >Home</a
+          >
+        </li>
+        <li class="transition duration-300 hover:-translate-y-0.5">
+          <a
+            class="hover:text-blue-600 transition-colors duration-300"
+            href="#"
+            >What we do</a
+          >
+        </li>
+        <li class="transition duration-300 hover:-translate-y-0.5">
+          <a
+            class="hover:text-blue-600 transition-all duration-300"
+            href="#"
+            >services</a
+          >
+        </li>
+        <li class="transition duration-300 hover:-translate-y-0.5">
+          <a
+            class="hover:text-blue-600 transition-colors duration-300"
+            href="#"
+            >project</a
+          >
+        </li>
+        <li class="transition duration-300 hover:-translate-y-0.5">
+          <a
+            class="hover:text-blue-600 transition-colors duration-300"
+            href="#"
+            >blog</a
+          >
+        </li>
+        <li class="transition duration-300 hover:-translate-y-0.5">
+          <a
+            class="hover:text-blue-600 transition-colors duration-300"
+            href="#"
+            >contact</a
+          >
+        </li>
+      </ul>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        class="md:hidden cursor-pointer"
+      >
+        <path
+          fill="currentColor"
+          d="M22 18.005c0 .55-.446.995-.995.995h-8.01a.995.995 0 0 1 0-1.99h8.01c.55 0 .995.445.995.995M22 12c0 .55-.446.995-.995.995H2.995a.995.995 0 1 1 0-1.99h18.01c.55 0 .995.446.995.995m-.995-5.01a.995.995 0 0 0 0-1.99H8.995a.995.995 0 1 0 0 1.99z"
+        />
+      </svg>
+    </nav>
+
+    <section
+      class="flex flex-col md:flex-row items-center relative mb-10 mt-10 md:mt-12 w-[90%] md:w-[85%] mx-auto"
+    >
+      <div
+        class="w-full md:w-1/2 flex flex-col gap-6 md:gap-8 pt-6 md:pt-0 pb-10"
+      >
+        <h1 class="font-bold text-4xl md:text-5xl text-left relative z-10">
+          A Digital Product Agency
+        </h1>
+        <p class="text-[#565656] w-full md:w-[80%] text-base/6 relative z-10">
+          Leading digital agency with solid design and development expertise. We
+          build readymade websites, mobile applications, and elaborate online
+          business services.
+        </p>
+        <button
+          class="text-white bg-[#2639ED] font-medium w-fit py-3 px-6 rounded-full cursor-pointer hover:text-red-200 hover:bg-[#051cee] transition-colors duration-500 relative z-10"
+        >
+          Contact Now
+        </button>
+
+        <img
+          src="./images/DotOrnament.png"
+          alt=""
+          class="absolute h-auto w-40 md:w-auto -bottom-20 md:-bottom-20 left-0 md:left-5 z-0"
+        />
+      </div>
+
+      <div class="w-full md:w-1/2 relative flex justify-end">
+        <img
+          src="./images/image8.png"
+          alt="hero image"
+          class="w-full h-auto object-cover relative z-10"
+        />
+        <img
+          src="./images/Ellipse85.png"
+          alt=""
+          class="size-16 md:size-24 absolute -top-5 md:top-0 left-1/2 -translate-x-1/2 z-0"
+        />
+        <img
+          src="./images/Rectangle23.png"
+          alt=""
+          class="size-24 md:size-32 absolute -bottom-10 md:-bottom-14 right-4 md:right-10 z-0"
+        />
+      </div>
+    </section>
+
+    <div
+      class="flex flex-col md:flex-row items-center justify-between w-[90%] md:w-[85%] mx-auto py-12 md:py-20 gap-10 md:gap-20 mt-10"
+    >
+      <div class="w-full md:w-1/4 text-center md:text-left">
+        <h3 class="font-semibold text-2xl mb-4">Our Client</h3>
+        <p class="text-base/7 font-medium text-[#757575]">
+          Several selected clients, who already believe in our service.
+        </p>
+      </div>
+
+      <div
+        class="flex items-center justify-center md:justify-end flex-wrap gap-8 md:gap-12 w-full md:w-3/4"
+      >
+        <img src="./images/GoogleLogo(1).png" alt="" class="h-8 md:h-10" />
+        <img src="./images/AirbnbLogo.png" alt="" class="h-8 md:h-10" />
+        <img src="./images/UberEatsLogo.png" alt="" class="h-4 md:h-5" />
+        <img src="./images/AmazonLogo.png" alt="" class="h-8 md:h-10" />
+      </div>
+    </div>
+
+    
+    <section class="max-w-full py-20 md:py-32 mt-20 md:mt-0 relative">
+      <div
+        class="w-[90%] md:w-[85%] mx-auto flex flex-col md:flex-row items-center gap-10"
+      >
+        <div class="md:w-1/2 relative flex justify-center z-10">
+          <img
+            src="./images/screenplay.png"
+            alt="Video Screenplay"
+            class="w-full h-auto object-cover rounded-xl shadow-lg"
+          />
+          <a
+            href="https://www.youtube.com/watch?v=yyy9E1DPdqE"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/play-rounded-button1.png"
+              alt="Play Button"
+              class="w-16 md:w-20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[bounce_6s_linear_infinite] hover:animate-none cursor-pointer z-30"
+            />
+          </a>
+        </div>
+
+        <div class="md:w-1/2 pt-10 md:pt-0 relative z-10">
+          <img
+            src="./images/Rectangle26.png"
+            alt=""
+            class="size-16 absolute top-0 left-0"
+          />
+          <h3 class="text-3xl font-semibold mb-6">
+            Great Digital Product <br />
+            Agency since 2016
+          </h3>
+          <p class="text-base text-gray-600">
+            Our Business Plan is a written document describing a company's core
+            <br class="hidden lg:block" />
+            business activites, Objectives, and how it plans to achieve its
+            goals. Our <br class="hidden lg:block" />
+            goal is to provide our client high quality Product with modern idea
+            <br class="hidden lg:block" />
+            accordingly their budgets and according thir reuirements.
+          </p>
+        </div>
+
+        <img
+          src="./images/Ellipse86(1).png"
+          alt=""
+          class="hidden lg:block absolute bottom-10 right-0 z-0"
+        />
+      </div>
+    </section>
+
+    <section class="py-20 md:py-32 w-[90%] md:w-[85%] mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold mb-4">What our happy client say</h2>
+        <p class="text-[#757575] text-base font-medium">
+          Several selected clients, who already believe in our service.
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col lg:flex-row items-center justify-center gap-10 relative"
+      >
+        <div class="relative flex-shrink-0">
+          <img
+            src="./images/unsplash_MTZTGvDsHFY(1).png"
+            alt="Client Matthew Paul"
+            class="w-64 h-64 md:w-96 md:h-96 object-cover rounded-xl shadow-lg relative z-10"
+          />
+          <img
+            src="./images/Dot.png"
+            alt=""
+            class="absolute -top-6 -left-6 z-0"
+          />
+          <img
+            src="./images/Ellipse94.png"
+            alt=""
+            class="absolute -bottom-2 -right-2 z-0 size-16"
+          />
+        </div>
+
+        <div class="text-center lg:text-left flex flex-col gap-5 max-w-lg">
+          <h3 class="text-2xl font-bold">Matthew Paul</h3>
+          <p class="text-base font-medium text-[#565656]">
+            Perfect, very good job! Thank you for the amazing design and work.
+            Really impressed with the high quality and quick turnaround time.
+            Highly recommend.
+          </p>
+          <div class="flex gap-3 justify-center lg:justify-start">
+            <span
+              class="bg-[#2947a9] rounded-full inline-block size-3 hover:bg-sky-800 cursor-pointer"
+            ></span>
+            <span
+              class="bg-[#E7F0FC] rounded-full inline-block size-3 hover:bg-sky-800 cursor-pointer"
+            ></span>
+            <span
+              class="bg-[#E7F0FC] rounded-full inline-block size-3 hover:bg-sky-800 cursor-pointer"
+            ></span>
+            <span
+              class="bg-[#E7F0FC] rounded-full inline-block size-3 hover:bg-sky-800 cursor-pointer"
+            ></span>
+            <span
+              class="bg-[#E7F0FC] rounded-full inline-block size-3 hover:bg-sky-800 cursor-pointer"
+            ></span>
+          </div>
+        </div>
+
+        <img
+          src="./images/Group71.png"
+          alt=""
+          class="hidden lg:block w-72 h-72 object-cover relative z-10"
+        />
+        <img
+          src="./images/Ellipse93.png"
+          alt=""
+          class="hidden lg:block absolute bottom-10 right-20 z-0 size-20"
+        />
+      </div>
+
+      <div
+        class="relative mt-20 md:mt-32 p-8 md:p-16 rounded-xl bg-gray-50 flex flex-col lg:flex-row items-center justify-between"
+      >
+        <img
+          src="./images/Rectangle 30.png"
+          alt=""
+          class="absolute inset-0 w-full h-full object-cover rounded-xl opacity-20 hidden md:block"
+        />
+        <img
+          src="./images/Rectangle 31.png"
+          alt=""
+          class="absolute top-0 right-0 w-24 md:w-auto z-0"
+        />
+        <img
+          src="./images/Dot.png"
+          alt=""
+          class="absolute top-5 right-20 z-0 hidden lg:block"
+        />
+        <img
+          src="./images/Rectangle32.png"
+          alt=""
+          class="absolute bottom-0 left-0 z-0 hidden lg:block"
+        />
+
+        <div class="text-center lg:text-left z-10 mb-8 lg:mb-0">
+          <h3 class="font-bold text-2xl mb-2">Subscribe Newsletter</h3>
+          <p class="text-sm text-gray-600">
+            I will update good news and promotion service not spam
+          </p>
+        </div>
+
+        <form class="flex w-full lg:w-96 relative z-10">
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your Email Address"
+            class="py-3 bg-white flex-1 pl-5 text-sm border-gray-300 border rounded-full focus:outline-none focus:ring-2 focus:ring-blue-700"
+          />
+          <button
+            type="submit"
+            class="border-blue-700 border bg-blue-700 font-bold text-white text-xs absolute right-1 top-1 bottom-1 px-5 rounded-full hover:bg-blue-600 hover:text-white transition-colors duration-300"
+          >
+            <a
+              href="https://www.youtube.com/watch?v=yyy9E1DPdqE"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contact Now</a
+            >
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <div class="w-[90%] md:w-[85%] mx-auto border-t-2 border-[#E4E4E4]"></div>
+
+    <footer class="w-full py-16 md:py-20">
+      <div
+        class="w-[90%] md:w-[85%] mx-auto flex flex-col md:flex-row items-start justify-between gap-12 md:gap-20"
+      >
+        <div class="w-full md:w-1/4 flex flex-col gap-4">
+          <img src="./images/A+Studio.png" alt="logo" class="h-5 w-fit" />
+
+          <p class="text-sm text-gray-600">
+            Leading digital agency with solid design <br />
+            and development expertise. We build <br />
+            readymade websites, mobile applications, <br />
+            and elaborate online business services.
+          </p>
+
+          <div class="flex gap-3 mt-5">
+            <img
+              src="./images/facebook.png"
+              alt=""
+              class="size-8 cursor-pointer"
+            />
+            <img
+              src="./images/twitterlogo.png"
+              alt=""
+              class="size-8 cursor-pointer"
+            />
+            <img
+              src="./images/linkedin.png"
+              alt=""
+              class="size-8 cursor-pointer"
+            />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-wrap justify-between gap-10 md:gap-20 w-full md:w-3/4"
+        >
+          <div class="min-w-[120px]">
+            <h2 class="font-bold mb-4">What We Do</h2>
+            <p class="text-sm text-gray-600 mb-2">Web Design</p>
+            <p class="text-sm text-gray-600 mb-2">App Design</p>
+            <p class="text-sm text-gray-600 mb-2">Social Media</p>
+            <p class="text-sm text-gray-600 mb-2">Manage Market</p>
+            <p class="text-sm text-gray-600 mb-2">Analysis Project</p>
+          </div>
+
+          <div class="min-w-[120px]">
+            <h2 class="font-bold mb-4">Company</h2>
+            <p class="text-sm text-gray-600 mb-2">
+              <a href="">About Us</a>
+            </p>
+            <p class="text-sm text-gray-600 mb-2">
+              <a href="">Careers</a>
+            </p>
+            <p class="text-sm text-gray-600 mb-2">
+              <a href="">Become Investor</a>
+            </p>
+          </div>
+
+          <div class="min-w-[120px]">
+            <h2 class="font-bold mb-4">Support</h2>
+            <p class="text-sm text-gray-600 mb-2">
+              <a href="">FAQ</a>
+            </p>
+            <p class="text-sm text-gray-600 mb-2">
+              <a href="">Policy</a>
+            </p>
+            <p class="text-sm text-gray-600 mb-2">
+              <a href="">Business</a>
+            </p>
+          </div>
+
+          <div class="min-w-[120px]">
+            <h2 class="font-bold mb-4">Contact</h2>
+            <p class="text-sm text-gray-600 mb-2">
+              <a href="">WhatsApp</a>
+            </p>
+            <p class="text-sm text-gray-600 mb-2">
+              <a href="">Support 24</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-[90%] md:w-[85%] mx-auto border-t-2 border-[#E4E4E4] mt-10"
+      ></div>
+
+      <p class="text-center text-sm text-gray-600 mt-3">
+        Copyright © 2022 Avi Yansah
+      </p>
+    </footer>
+  </body>
+</html>
